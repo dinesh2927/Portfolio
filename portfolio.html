@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #f0f0f0;
+            color: #222;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #f8f8f8;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #ff9800;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #ff9800, #ff5722);
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .section {
+            text-align: center;
+            padding: 60px;
+            background: white;
+            margin: 30px auto;
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button:hover {
+            background: #ff5722;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 30px;
+            color: #222;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ff9800;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <!-- Updated Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="hero" id="home">
+        <h1>Welcome to <b>My Portfolio</b></h1>
+        <p>DINESH S</p>
+    </div>
+    
+    <div class="section" id="about">
+        <h2>About</h2>
+        <p>I'm a <b>student of A.M. Jain College (2nd Year)</b> with a background in computer applications. I have worked on several projects in AI and web development.</p>
+    </div>
+    
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <li>A smart ID card scanning system for college campuses. It sends automated messages to parents when students enter and leave the campus, ensuring real-time tracking and safety.</li>
+    </div>
+    
+    <div class="section" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button><br>
+            <h1>Or</h1>
+            <div class="social-icons">
+                <!-- Instagram Icon -->
+                <a href="https://instagram.com/dinesh__2906" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <!-- Telegram Icon -->
+                <a href="https://t.me/@Dinesh2906" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Dinesh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
